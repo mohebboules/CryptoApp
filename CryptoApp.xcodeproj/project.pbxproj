@@ -16,6 +16,7 @@
 		2128BAE32D174515009069BA /* CoinImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2128BAE22D174515009069BA /* CoinImageView.swift */; };
 		2128BAE52D17461F009069BA /* CoinImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2128BAE42D17461F009069BA /* CoinImageService.swift */; };
 		2128BAE72D174774009069BA /* CoinImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2128BAE62D174774009069BA /* CoinImageViewModel.swift */; };
+		2128BAE92D174C81009069BA /* LocalFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2128BAE82D174C81009069BA /* LocalFileManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		2128BAE22D174515009069BA /* CoinImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageView.swift; sourceTree = "<group>"; };
 		2128BAE42D17461F009069BA /* CoinImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageService.swift; sourceTree = "<group>"; };
 		2128BAE62D174774009069BA /* CoinImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageViewModel.swift; sourceTree = "<group>"; };
+		2128BAE82D174C81009069BA /* LocalFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFileManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -125,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				2128BADF2D173E44009069BA /* NetworkingManager.swift */,
+				2128BAE82D174C81009069BA /* LocalFileManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				2128BAE32D174515009069BA /* CoinImageView.swift in Sources */,
 				2128BAB72D1711C9009069BA /* HomeView.swift in Sources */,
 				2128BAD82D173003009069BA /* HomeViewModel.swift in Sources */,
+				2128BAE92D174C81009069BA /* LocalFileManager.swift in Sources */,
 				2128BABD2D17158F009069BA /* CircleButtonAnimationView.swift in Sources */,
 				2128BABB2D1712AB009069BA /* CircleButtonView.swift in Sources */,
 				2128BAE02D173E44009069BA /* NetworkingManager.swift in Sources */,
