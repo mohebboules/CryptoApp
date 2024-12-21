@@ -11,6 +11,7 @@
 		2128BABB2D1712AB009069BA /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2128BABA2D1712AB009069BA /* CircleButtonView.swift */; };
 		2128BABD2D17158F009069BA /* CircleButtonAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2128BABC2D17158F009069BA /* CircleButtonAnimationView.swift */; };
 		2128BAC32D17213B009069BA /* CoinRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2128BAC22D17213B009069BA /* CoinRowView.swift */; };
+		2128BAD82D173003009069BA /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2128BAD72D173003009069BA /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		2128BABA2D1712AB009069BA /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
 		2128BABC2D17158F009069BA /* CircleButtonAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonAnimationView.swift; sourceTree = "<group>"; };
 		2128BAC22D17213B009069BA /* CoinRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRowView.swift; sourceTree = "<group>"; };
+		2128BAD72D173003009069BA /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -87,6 +89,7 @@
 		2128BAB52D1711B2009069BA /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				2128BAD72D173003009069BA /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2128BAB72D1711C9009069BA /* HomeView.swift in Sources */,
+				2128BAD82D173003009069BA /* HomeViewModel.swift in Sources */,
 				2128BABD2D17158F009069BA /* CircleButtonAnimationView.swift in Sources */,
 				2128BABB2D1712AB009069BA /* CircleButtonView.swift in Sources */,
 				2128BAC32D17213B009069BA /* CoinRowView.swift in Sources */,
