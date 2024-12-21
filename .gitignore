@@ -1,0 +1,65 @@
+# Xcode
+.DS_Store
+*.swp
+*.xcuserstate
+*.lock
+*.xccheckout
+*.xcworkspace
+*.xcuserdatad
+*.xcscmblueprint
+
+# Build artifacts
+DerivedData/
+build/
+*.app
+*.ipa
+*.dSYM
+*.xcdebugger/
+
+# Swift Package Manager
+.swiftpm/
+Package.resolved
+.build/
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/Build/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+fastlane/test_output/
+
+# IDE configurations
+.idea/
+.vscode/
+
+# Playgrounds
+timeline.xctimeline
+playground.xcworkspace/
+
+# Temporary files
+*.tmp
+*.log
+
+# macOS files
+Icon?
+Thumbs.db
+
+# Secrets and configuration
+*.key
+*.plist
+!Info.plist
+!*.xcodeproj/project.pbxproj
+
+# Device support
+*.simruntime/
+*.simdevice/
+
+# Testing
+test-reports/
+UITests/
