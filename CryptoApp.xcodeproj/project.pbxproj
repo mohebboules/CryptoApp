@@ -17,6 +17,7 @@
 		2128BAE52D17461F009069BA /* CoinImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2128BAE42D17461F009069BA /* CoinImageService.swift */; };
 		2128BAE72D174774009069BA /* CoinImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2128BAE62D174774009069BA /* CoinImageViewModel.swift */; };
 		2128BAE92D174C81009069BA /* LocalFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2128BAE82D174C81009069BA /* LocalFileManager.swift */; };
+		2128BAFF2D176577009069BA /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2128BAFE2D176577009069BA /* SearchBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		2128BAE42D17461F009069BA /* CoinImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageService.swift; sourceTree = "<group>"; };
 		2128BAE62D174774009069BA /* CoinImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageViewModel.swift; sourceTree = "<group>"; };
 		2128BAE82D174C81009069BA /* LocalFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFileManager.swift; sourceTree = "<group>"; };
+		2128BAFE2D176577009069BA /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -110,6 +112,7 @@
 			children = (
 				2128BAE12D174500009069BA /* CoinImage */,
 				2128BAB92D17129A009069BA /* CircleButton */,
+				2128BAFE2D176577009069BA /* SearchBarView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				2128BABB2D1712AB009069BA /* CircleButtonView.swift in Sources */,
 				2128BAE02D173E44009069BA /* NetworkingManager.swift in Sources */,
 				2128BAC32D17213B009069BA /* CoinRowView.swift in Sources */,
+				2128BAFF2D176577009069BA /* SearchBarView.swift in Sources */,
 				2128BAE52D17461F009069BA /* CoinImageService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
