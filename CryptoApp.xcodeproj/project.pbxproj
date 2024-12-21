@@ -12,6 +12,7 @@
 		2128BABD2D17158F009069BA /* CircleButtonAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2128BABC2D17158F009069BA /* CircleButtonAnimationView.swift */; };
 		2128BAC32D17213B009069BA /* CoinRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2128BAC22D17213B009069BA /* CoinRowView.swift */; };
 		2128BAD82D173003009069BA /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2128BAD72D173003009069BA /* HomeViewModel.swift */; };
+		2128BAE02D173E44009069BA /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2128BADF2D173E44009069BA /* NetworkingManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		2128BABC2D17158F009069BA /* CircleButtonAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonAnimationView.swift; sourceTree = "<group>"; };
 		2128BAC22D17213B009069BA /* CoinRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRowView.swift; sourceTree = "<group>"; };
 		2128BAD72D173003009069BA /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		2128BADF2D173E44009069BA /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -48,6 +50,7 @@
 				2128BA9E2D1708F7009069BA /* CryptoApp */,
 				2128BA9D2D1708F7009069BA /* Products */,
 				2128BAB22D171194009069BA /* core */,
+				2128BADE2D173E1D009069BA /* Utilities */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +112,14 @@
 				2128BABC2D17158F009069BA /* CircleButtonAnimationView.swift */,
 			);
 			path = CircleButton;
+			sourceTree = "<group>";
+		};
+		2128BADE2D173E1D009069BA /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2128BADF2D173E44009069BA /* NetworkingManager.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +200,7 @@
 				2128BAD82D173003009069BA /* HomeViewModel.swift in Sources */,
 				2128BABD2D17158F009069BA /* CircleButtonAnimationView.swift in Sources */,
 				2128BABB2D1712AB009069BA /* CircleButtonView.swift in Sources */,
+				2128BAE02D173E44009069BA /* NetworkingManager.swift in Sources */,
 				2128BAC32D17213B009069BA /* CoinRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
