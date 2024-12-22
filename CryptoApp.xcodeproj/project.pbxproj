@@ -20,6 +20,9 @@
 		2128BAFF2D176577009069BA /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2128BAFE2D176577009069BA /* SearchBarView.swift */; };
 		2128BB052D180495009069BA /* StatisticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2128BB042D180495009069BA /* StatisticView.swift */; };
 		2128BB072D180763009069BA /* HomeStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2128BB062D180763009069BA /* HomeStatsView.swift */; };
+		2128BB0F2D18179C009069BA /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2128BB0E2D18179C009069BA /* PortfolioView.swift */; };
+		2128BB112D181942009069BA /* XMarkButton .swift in Sources */ = {isa = PBXBuildFile; fileRef = 2128BB102D181942009069BA /* XMarkButton .swift */; };
+		2128BB152D182024009069BA /* CoinLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2128BB142D182024009069BA /* CoinLogoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,9 @@
 		2128BAFE2D176577009069BA /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 		2128BB042D180495009069BA /* StatisticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticView.swift; sourceTree = "<group>"; };
 		2128BB062D180763009069BA /* HomeStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStatsView.swift; sourceTree = "<group>"; };
+		2128BB0E2D18179C009069BA /* PortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
+		2128BB102D181942009069BA /* XMarkButton .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XMarkButton .swift"; sourceTree = "<group>"; };
+		2128BB142D182024009069BA /* CoinLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinLogoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -100,6 +106,7 @@
 				2128BAB62D1711C9009069BA /* HomeView.swift */,
 				2128BAC22D17213B009069BA /* CoinRowView.swift */,
 				2128BB062D180763009069BA /* HomeStatsView.swift */,
+				2128BB0E2D18179C009069BA /* PortfolioView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -119,6 +126,7 @@
 				2128BAB92D17129A009069BA /* CircleButton */,
 				2128BAFE2D176577009069BA /* SearchBarView.swift */,
 				2128BB042D180495009069BA /* StatisticView.swift */,
+				2128BB102D181942009069BA /* XMarkButton .swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -147,6 +155,7 @@
 				2128BAE22D174515009069BA /* CoinImageView.swift */,
 				2128BAE42D17461F009069BA /* CoinImageService.swift */,
 				2128BAE62D174774009069BA /* CoinImageViewModel.swift */,
+				2128BB142D182024009069BA /* CoinLogoView.swift */,
 			);
 			path = CoinImage;
 			sourceTree = "<group>";
@@ -225,14 +234,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2128BB152D182024009069BA /* CoinLogoView.swift in Sources */,
 				2128BB052D180495009069BA /* StatisticView.swift in Sources */,
 				2128BAE72D174774009069BA /* CoinImageViewModel.swift in Sources */,
 				2128BAE32D174515009069BA /* CoinImageView.swift in Sources */,
 				2128BAB72D1711C9009069BA /* HomeView.swift in Sources */,
+				2128BB0F2D18179C009069BA /* PortfolioView.swift in Sources */,
 				2128BAD82D173003009069BA /* HomeViewModel.swift in Sources */,
 				2128BAE92D174C81009069BA /* LocalFileManager.swift in Sources */,
 				2128BABD2D17158F009069BA /* CircleButtonAnimationView.swift in Sources */,
 				2128BB072D180763009069BA /* HomeStatsView.swift in Sources */,
+				2128BB112D181942009069BA /* XMarkButton .swift in Sources */,
 				2128BABB2D1712AB009069BA /* CircleButtonView.swift in Sources */,
 				2128BAE02D173E44009069BA /* NetworkingManager.swift in Sources */,
 				2128BAC32D17213B009069BA /* CoinRowView.swift in Sources */,
