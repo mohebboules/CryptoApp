@@ -11,7 +11,10 @@ struct HomeView: View {
     @EnvironmentObject private var vm: HomeViewModel
     @State private var showPortfolio: Bool = false // Animate right
     @State private var showPortfolioView: Bool = false // new sheet
-
+    
+    @State private var selectedCoin: CoinModel? = nil
+    @State private var showCoinDetails: Bool = false
+    
     var body: some View {
         ZStack{
             // Background layer
@@ -41,6 +44,23 @@ struct HomeView: View {
                 Spacer(minLength: 0)
             }
         }
+        .navigationDestination(isPresented: $showCoinDetails) {
+            DetailLoadingView(coin: $selectedCoin)
+            }
+        // if before iOS 16
+        /*
+//        .background(
+//            NavigationLink(destination: DetailView(coin: $selectedCoin), isActive: $showCoinDetails) {
+//                                EmptyView()
+//                            }
+//        )
+         */
+        
+        
+
+        
+       
+        
     }
 }
 
@@ -54,6 +74,7 @@ struct HomeView: View {
 }
 
 extension HomeView {
+    
     private var homeHeader: some View {
         HStack{
             CircleButtonView(iconName: showPortfolio ? "plus" : "info")
@@ -82,11 +103,15 @@ extension HomeView {
         }
         .padding(.horizontal)
     }
+    
     private var allCoinsList: some View {
         List{
             ForEach(vm.allCoins){ coin in
                 CoinRowView(coin: coin, showHoldingColumn: false)
                     .listRowInsets(.init(top: 10, leading: 0, bottom: 10, trailing: 10))
+                    .onTapGesture {
+                        segue(coin: coin)
+                    }
             }
             
         }
@@ -95,11 +120,15 @@ extension HomeView {
             vm.reloadData()
         }
     }
+    
     private var portfolioCoinsList: some View {
         List{
             ForEach(vm.portofolioCoins){ coin in
                 CoinRowView(coin: coin, showHoldingColumn: true)
                     .listRowInsets(.init(top: 10, leading: 0, bottom: 10, trailing: 10))
+                    .onTapGesture {
+                        segue(coin: coin)
+                    }
             }
             
         }
@@ -108,6 +137,7 @@ extension HomeView {
             vm.reloadData()
         }
     }
+    
     private var columnTitles: some View {
         HStack{
             HStack(spacing: 4) {
@@ -164,5 +194,10 @@ extension HomeView {
         .font(.caption)
         .foregroundStyle(Color.theme.secondaryText)
         .padding(.horizontal)
+    }
+    
+    private func segue(coin: CoinModel){
+        selectedCoin = coin
+        showCoinDetails.toggle()
     }
 }
