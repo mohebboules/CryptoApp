@@ -23,6 +23,7 @@
 		2128BB0F2D18179C009069BA /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2128BB0E2D18179C009069BA /* PortfolioView.swift */; };
 		2128BB112D181942009069BA /* XMarkButton .swift in Sources */ = {isa = PBXBuildFile; fileRef = 2128BB102D181942009069BA /* XMarkButton .swift */; };
 		2128BB152D182024009069BA /* CoinLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2128BB142D182024009069BA /* CoinLogoView.swift */; };
+		21BAC33B2D187802008511FE /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BAC33A2D187802008511FE /* HapticManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		2128BB0E2D18179C009069BA /* PortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
 		2128BB102D181942009069BA /* XMarkButton .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XMarkButton .swift"; sourceTree = "<group>"; };
 		2128BB142D182024009069BA /* CoinLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinLogoView.swift; sourceTree = "<group>"; };
+		21BAC33A2D187802008511FE /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -145,6 +147,7 @@
 			children = (
 				2128BADF2D173E44009069BA /* NetworkingManager.swift */,
 				2128BAE82D174C81009069BA /* LocalFileManager.swift */,
+				21BAC33A2D187802008511FE /* HapticManager.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 				2128BB072D180763009069BA /* HomeStatsView.swift in Sources */,
 				2128BB112D181942009069BA /* XMarkButton .swift in Sources */,
 				2128BABB2D1712AB009069BA /* CircleButtonView.swift in Sources */,
+				21BAC33B2D187802008511FE /* HapticManager.swift in Sources */,
 				2128BAE02D173E44009069BA /* NetworkingManager.swift in Sources */,
 				2128BAC32D17213B009069BA /* CoinRowView.swift in Sources */,
 				2128BAFF2D176577009069BA /* SearchBarView.swift in Sources */,

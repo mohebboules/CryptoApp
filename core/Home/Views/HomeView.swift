@@ -91,6 +91,9 @@ extension HomeView {
             
         }
         .listStyle(PlainListStyle())
+        .refreshable {
+            vm.reloadData()
+        }
     }
     private var portfolioCoinsList: some View {
         List{
@@ -101,6 +104,9 @@ extension HomeView {
             
         }
         .listStyle(PlainListStyle())
+        .refreshable {
+            vm.reloadData()
+        }
     }
     private var columnTitles: some View {
         HStack{
@@ -111,6 +117,15 @@ extension HomeView {
             }
             Text("Price")
                 .frame(width: UIScreen.main.bounds.width / 3.5, alignment: .trailing)
+            Button {
+                withAnimation(.linear(duration: 2)){
+                    vm.reloadData()
+                }
+            } label: {
+                Image(systemName: "goforward")
+            }
+            .rotationEffect(Angle(degrees: vm.isLoading ? 360 : 0), anchor: .center)
+
         }
         .font(.caption)
         .foregroundStyle(Color.theme.secondaryText)
