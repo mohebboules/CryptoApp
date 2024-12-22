@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		212251582D18BC3400AFB20C /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212251572D18BC3400AFB20C /* DetailViewModel.swift */; };
 		2128BAB72D1711C9009069BA /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2128BAB62D1711C9009069BA /* HomeView.swift */; };
 		2128BABB2D1712AB009069BA /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2128BABA2D1712AB009069BA /* CircleButtonView.swift */; };
 		2128BABD2D17158F009069BA /* CircleButtonAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2128BABC2D17158F009069BA /* CircleButtonAnimationView.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		212251572D18BC3400AFB20C /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		2128BA9C2D1708F7009069BA /* CryptoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2128BAB62D1711C9009069BA /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		2128BABA2D1712AB009069BA /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
@@ -186,6 +188,7 @@
 		21BAC3402D188D06008511FE /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				212251572D18BC3400AFB20C /* DetailViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				2128BB052D180495009069BA /* StatisticView.swift in Sources */,
 				2128BAE72D174774009069BA /* CoinImageViewModel.swift in Sources */,
 				2128BAE32D174515009069BA /* CoinImageView.swift in Sources */,
+				212251582D18BC3400AFB20C /* DetailViewModel.swift in Sources */,
 				2128BAB72D1711C9009069BA /* HomeView.swift in Sources */,
 				21BAC3422D188D1C008511FE /* DetailView.swift in Sources */,
 				2128BB0F2D18179C009069BA /* PortfolioView.swift in Sources */,
