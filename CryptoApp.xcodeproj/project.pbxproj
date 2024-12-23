@@ -26,6 +26,7 @@
 		2128BB152D182024009069BA /* CoinLogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2128BB142D182024009069BA /* CoinLogoView.swift */; };
 		21BAC33B2D187802008511FE /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BAC33A2D187802008511FE /* HapticManager.swift */; };
 		21BAC3422D188D1C008511FE /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BAC3412D188D1C008511FE /* DetailView.swift */; };
+		21EA62532D19FF5C00C77806 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EA62522D19FF5C00C77806 /* ChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		2128BB142D182024009069BA /* CoinLogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinLogoView.swift; sourceTree = "<group>"; };
 		21BAC33A2D187802008511FE /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 		21BAC3412D188D1C008511FE /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		21EA62522D19FF5C00C77806 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -181,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				21BAC3412D188D1C008511FE /* DetailView.swift */,
+				21EA62522D19FF5C00C77806 /* ChartView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				2128BABD2D17158F009069BA /* CircleButtonAnimationView.swift in Sources */,
 				2128BB072D180763009069BA /* HomeStatsView.swift in Sources */,
 				2128BB112D181942009069BA /* XMarkButton .swift in Sources */,
+				21EA62532D19FF5C00C77806 /* ChartView.swift in Sources */,
 				2128BABB2D1712AB009069BA /* CircleButtonView.swift in Sources */,
 				21BAC33B2D187802008511FE /* HapticManager.swift in Sources */,
 				2128BAE02D173E44009069BA /* NetworkingManager.swift in Sources */,

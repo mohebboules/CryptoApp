@@ -14,7 +14,7 @@ struct DetailLoadingView: View{
     var body: some View {
         ZStack {
             if let coin = coin {
-                NavigationView{
+                NavigationStack{
                     DetailView(coin: coin)
                 }
             }
@@ -36,21 +36,31 @@ struct DetailView: View {
     var body: some View {
         ZStack {
             ScrollView{
-                VStack(spacing: 20) {
-                 Text("")
-                        .frame(height: 100)
-                    oveviewTitle
-                    Divider()
-                    overviewGrid
-                    
-                    additionalTitle
-                    Divider()
-                    additionalGrid
+                VStack {
+                    ChartView(coin: vm.coin)
+                        .padding(.vertical)
+                    VStack(spacing: 20) {
+                        oveviewTitle
+                        Divider()
+                        overviewGrid
+                        
+                        additionalTitle
+                        Divider()
+                        additionalGrid
+                    }
+                    .padding()
                 }
-                .padding()
             }
         }
         .navigationTitle("\(vm.coin.name)")
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                navigationBarTrailingItems
+                    
+            }
+            
+
+        }
     }
 }
 
@@ -98,5 +108,16 @@ extension DetailView {
                 StatisticView(stat: stat)
             }
         }
+    }
+    
+    private var navigationBarTrailingItems: some View {
+        HStack {
+            Text(vm.coin.symbol.uppercased())
+                .font(.headline)
+                .foregroundStyle(Color.theme.secondaryText)
+            CoinImageView(coin: vm.coin)
+                .frame(width: 25, height: 25)
+        }
+
     }
 }

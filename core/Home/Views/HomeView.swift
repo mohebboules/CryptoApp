@@ -46,7 +46,7 @@ struct HomeView: View {
         }
         .navigationDestination(isPresented: $showCoinDetails) {
             DetailLoadingView(coin: $selectedCoin)
-            }
+        } 
         // if before iOS 16
         /*
 //        .background(
