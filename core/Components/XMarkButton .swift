@@ -9,12 +9,12 @@ import SwiftUI
 
 struct XMarkButton: View {
     @Environment(\.dismiss) private var dismiss
-    @Binding var showPortfolioView: Bool
+    @Binding var showView: Bool
 
     var body: some View {
         Button(action: {
            dismiss()
-            showPortfolioView.toggle()
+            showView.toggle()
         }, label: {
             Image(systemName: "xmark")
                 .font(.headline)
@@ -23,5 +23,5 @@ struct XMarkButton: View {
 }
 
 #Preview {
-    XMarkButton(showPortfolioView: .constant(false))
+    XMarkButton(showView: .constant(false))
 }

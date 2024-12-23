@@ -14,6 +14,7 @@ struct HomeView: View {
     
     @State private var selectedCoin: CoinModel? = nil
     @State private var showCoinDetails: Bool = false
+    @State private var showSettings: Bool = false
     
     var body: some View {
         ZStack{
@@ -43,6 +44,8 @@ struct HomeView: View {
 
                 Spacer(minLength: 0)
             }
+            .sheet(isPresented: $showSettings, content: { SettingsView(showView: showSettings) })
+            
         }
         .navigationDestination(isPresented: $showCoinDetails) {
             DetailLoadingView(coin: $selectedCoin)
@@ -84,6 +87,9 @@ extension HomeView {
                     if showPortfolio {
                         showPortfolioView.toggle()
                   }
+                    else {
+                        showSettings.toggle()
+                    }
                 }
             Spacer()
             Text(showPortfolio ? "Portfolio" : "Live Prices")
