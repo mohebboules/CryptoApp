@@ -38,7 +38,15 @@ struct HomeView: View {
                     .transition(.move(edge: .leading))
                 }
                 if showPortfolio{
-                    portfolioCoinsList
+                    ZStack(alignment: .top) {
+                        if vm.portofolioCoins.isEmpty && vm.searchText.isEmpty{
+                            portfolioEmptyText
+                                
+                        } else {
+                            portfolioCoinsList
+                        }
+                    }
+ 
                         .transition(.move(edge: .trailing))
                 }
 
@@ -142,6 +150,15 @@ extension HomeView {
         .refreshable {
             vm.reloadData()
         }
+    }
+    
+    private var portfolioEmptyText: some View {
+        Text("You have not added any coins to yor portfolio yet. Click on the + button to add coins")
+            .font(.callout)
+            .foregroundStyle(Color.theme.accent)
+            .fontWeight(.medium)
+            .multilineTextAlignment(.center)
+            .padding(50)
     }
     
     private var columnTitles: some View {
