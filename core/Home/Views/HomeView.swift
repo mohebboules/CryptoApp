@@ -51,7 +51,7 @@ struct HomeView: View {
 
                 Spacer(minLength: 0)
             }
-            .sheet(isPresented: $showSettings, content: { SettingsView(showView: showSettings) })
+            .sheet(isPresented: $showSettings, content: { SettingsView(showView: $showSettings) })
             
         }
         .navigationDestination(isPresented: $showCoinDetails) {

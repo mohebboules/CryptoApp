@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct SettingsView: View {
-    @State var showView: Bool = false
+    @Binding var showView: Bool
   
     let defaultURL = URL(string: "https://www.google.com")
     let youtubeURL = URL(string: "https://www.youtube.com/c/swiftfulThinking")
@@ -46,7 +46,7 @@ struct SettingsView: View {
 }
 
 #Preview {
-    SettingsView()
+    SettingsView(showView: .constant(true))
 }
 
 extension SettingsView {
