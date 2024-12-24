@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HomeStatsView: View {
     @EnvironmentObject private var vm: HomeViewModel
-    @Binding var showPorfolio: Bool
+//    @Binding var showPorfolio: Bool
     var body: some View {
         HStack {
             ForEach(vm.statistics) { stat in
@@ -18,11 +18,11 @@ struct HomeStatsView: View {
             }
         }
         .frame(width: UIScreen.main.bounds.width,
-               alignment: showPorfolio ? .trailing : .leading)
+               alignment: vm.viewState == .portfolioList ? .trailing : .leading)
     }
 }
 
 #Preview {
-    HomeStatsView(showPorfolio: .constant(false))
+    HomeStatsView()
         .environmentObject(DeveloperPreview.dev.homeVm)
 }

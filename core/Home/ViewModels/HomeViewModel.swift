@@ -21,11 +21,17 @@ class HomeViewModel: ObservableObject {
     
     @Published var sortOption: SortOption = .holdings
     
+    @Published var viewState: viewState = .livePricesList
+    
     private var cancellables: Set<AnyCancellable> = []
     
     private let coinDataService = CoinDataService()
     private let marketDataService = MarketDataService()
     private let portfolioDataService = PortfolioDataService()
+    
+    enum viewState {
+        case livePricesList, portfolioList
+    }
     
     enum SortOption {
         case rank, rankReversed, holdings, holdingsReversed, price, priceReversed

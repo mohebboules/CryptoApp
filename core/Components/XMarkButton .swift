@@ -9,6 +9,7 @@ import SwiftUI
 
 struct XMarkButton: View {
     @Environment(\.dismiss) private var dismiss
+    @EnvironmentObject private var homeVm: HomeViewModel
     @Binding var showView: Bool
 
     var body: some View {
@@ -24,4 +25,5 @@ struct XMarkButton: View {
 
 #Preview {
     XMarkButton(showView: .constant(false))
+        .environmentObject(HomeViewModel())
 }
