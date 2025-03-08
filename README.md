@@ -19,16 +19,16 @@ CryptoApp is a SwiftUI-based iOS application that allows users to track and expl
 
 ## 📷 Screenshots
 ### Live Prices (Dark Mode)
-<img src="assets/screenshots/Live Prices dark mode.png" width="300">
+<img src="assets/screenshots/LivePricesDarkMode.png" width="300">
 
 ### Live Prices (Light Mode)
-<img src="assets/screenshots/Live Prices light.png" width="300">
+<img src="assets/screenshots/LivePricesLight.png" width="300">
 
 ### Coin Details
-<img src="assets/screenshots/Coin details.png" width="300">
+<img src="assets/screenshots/Coindetails.png" width="300">
 
 ### Live Search
-<img src="assets/screenshots/Live search.png" width="300">
+<img src="assets/screenshots/LiveSearch.png" width="300">
 
 ### My Portfolio
 <img src="assets/screenshots/My Portfolio.png" width="300">
